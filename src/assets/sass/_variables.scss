@@ -1,0 +1,48 @@
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+//font sizes
+$base-font-size: 16px;
+
+// Function to convert px to rem
+@function rem($px) {
+  @return math.div($px, $base-font-size) * 1rem;
+}
+  
+  // Set base font sizes
+  $font-size-base: 1rem;
+  $font-size-lg: rem(20px);  // 1.25rem
+  $font-size-sm: rem(14px);  // 0.875rem
+  
+
+
+//border radius
+$border-radius: 0.25rem;
+
+//box shadow
+$black: #000;
+
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+
+
+//transition
+$transition-base: all 0.2s ease-in-out;
+
+//breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+
+
+
+
+
+
