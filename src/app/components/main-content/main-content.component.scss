@@ -1,0 +1,13 @@
+@import "../../../assets/styles/variables.scss";
+
+.main-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-color: $header-color;
+
+ h6{
+    margin-top: 2rem;
+    font-size: $font-size-xs;
+ }
+}
