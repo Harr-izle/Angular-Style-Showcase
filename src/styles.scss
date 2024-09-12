@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import './assets/styles/variables.scss';
-@import './assets/styles/theme.scss';
+@import '../src/styles/variables.scss';
+@import '../src/styles/theme';
 
 
 *{
@@ -12,6 +12,13 @@
 
  body{
     font-family: $font-family-sans-serif;
-       @include themed();
+    // background-color: red;
+     // @include theme.theme-light; // initial implementation
+     @include apply-theme('light');
+    
+     &.theme-dark {
+         // @include theme.theme-dark; // initial implementation
+         @include apply-theme('dark');
+     }
        overflow-x: hidden;
     }

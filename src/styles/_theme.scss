@@ -1,0 +1,26 @@
+@use 'sass:map';
+@import '../styles/variables.scss';
+
+
+@mixin theme-light {
+    background-color: $light-theme-background;
+    color: $light-theme-font;
+}
+
+@mixin theme-dark {
+    background-color: $dark-theme-background;
+    color: $dark-theme-font;
+}
+
+// creates a map for the theme mode
+$themes: (
+    'light': theme-light,
+    'dark': theme-dark,
+);
+
+// loops through the theme map
+@mixin apply-theme($theme) {
+    @each $key, $value in map-get($map: $themes, $key: $theme) {
+        #{$key}: $value;
+    }
+}
