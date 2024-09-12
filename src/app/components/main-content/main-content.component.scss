@@ -1,10 +1,13 @@
 @import "../../../assets/styles/variables.scss";
 
 .main-container{
+width: 100vw;
  display: flex;
  flex-direction: column;
  align-items: center;
  background-color: $header-color;
+ gap: 3rem;
+
 
  h6{
     margin-top: 2rem;

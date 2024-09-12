@@ -43,6 +43,9 @@ $breakpoint-xl: 1200px;
 //header color
 $header-color: 	#FAF9F6;
 
+//footer color
+$footer-color: #000;
+
 // flex layout
 @mixin flexbox($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch) {
   display: flex;

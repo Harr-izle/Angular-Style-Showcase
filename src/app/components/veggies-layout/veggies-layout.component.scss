@@ -1,0 +1,42 @@
+@import "../../../assets/styles/variables.scss";
+
+.veggies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 6rem;
+  width: 1000px;
+  margin-bottom: 2rem;
+
+
+  p{
+    font-size: $font-size-lg;
+    text-align: center;
+    width: 100%;
+  }
+ 
+
+  .veggie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+   
+   
+  }
+  .veggie img {
+    width: 300px;
+    height: 300px;
+    border-radius: $border-radius;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); 
+    }
+  
+}
+}
